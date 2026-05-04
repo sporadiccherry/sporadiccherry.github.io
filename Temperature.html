@@ -9,35 +9,38 @@
 </head>
 
 <body>
-	<main>
-	
-	<div class="topnav">
-		<a href="main.html">Home</a>
-		<a class="active" href="Temperature.html">Temperature</a>
-		<a href="DogYears.html">Dog Years</a>
-		<a href="VideoCompilation.html">Video Compilation</a>
-	</div>
-	<h1>Temperature Conversion Tool</h1>
-	<section>
-	<p>Please input the temperature that you would like to be converted:</p>
 
-	<form id="temperatureForm">
-		<label for = "kelvinLabel">Kelvin: </label> <br>
-		<input type = "text" id = "kelvinID" name = "kelvin" value = ""> <br><br>
-		<label for = "celsiusLabel">Celsius: </label> <br>
-		<input type = "text" id = "celsiusID" name = "celsius" value = ""> <br><br>
-		<label for = "fahrenheitLabel">Fahrenheit: </label> <br>
-		<input type = "text" id = "fahrenheitID" name = "fahrenheit" value = ""> <br><br>
-		<label for = "newtonLabel">Newton: </label> <br>
-		<input type = "text" id = "newtonID" name = "newton" value = ""> <br><br>
-		<button type="button"id="submitID" value="Submit" onclick="calculateTemp()">Convert</button> <br><br>
-	</form>
+	<section>
+		<div class="topnav">
+			<a href="main.html">Home</a>
+			<a class="active" href="Temperature.html">Temperature</a>
+			<a href="DogYears.html">Dog Years</a>
+			<a href="VideoCompilation.html">Video Compilation</a>
+		</div>
 	</section>
-	<section class="outputText">
-	<p id="myOutput"></p>
-	</section>
+	
+	<main>
+		<h1>Temperature Conversion Tool</h1>
+		<section>
+		<p>Please input the temperature that you would like to be converted:</p>
+
+		<form id="temperatureForm">
+			<label for = "kelvinLabel">Kelvin: </label> <br>
+			<input type = "text" id = "kelvinID" name = "kelvin" value = ""> <br><br>
+			<label for = "celsiusLabel">Celsius: </label> <br>
+			<input type = "text" id = "celsiusID" name = "celsius" value = ""> <br><br>
+			<label for = "fahrenheitLabel">Fahrenheit: </label> <br>
+			<input type = "text" id = "fahrenheitID" name = "fahrenheit" value = ""> <br><br>
+			<label for = "newtonLabel">Newton: </label> <br>
+			<input type = "text" id = "newtonID" name = "newton" value = ""> <br><br>
+			<button type="button"id="submitID" value="Submit" onclick="calculateTemp()">Convert</button> <br><br>
+		</form>
+		</section>
+		<section class="outputText">
+			<p id="myOutput"></p>
+		</section>
 	</main>
-	<footer>No copyright at all!</footer>
+		<footer>No copyright at all!</footer>
 	
 </body>
 

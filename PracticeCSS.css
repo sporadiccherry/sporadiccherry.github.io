@@ -38,6 +38,10 @@ body {
 /* Nav end */
 
 
+main {
+	margin-left: 5em;
+}
+
 /* Adds a gap after each section */
 section {
 	padding-bottom: 1em;

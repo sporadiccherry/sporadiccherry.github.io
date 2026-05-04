@@ -9,31 +9,33 @@
 </head>
 
 <body>
-	<main>
-	
-	<div class="topnav">
-		<a href="main.html">Home</a>
-		<a href="Temperature.html">Temperature</a>
-		<a class="active" href="DogYears.html">Dog Years</a>
-		<a href="VideoCompilation.html">Video Compilation</a>
-	</div>
-	<h1>Dog Years Calculator</h1>
 	<section>
-	<p>Please input your current age:</p>
+		<div class="topnav">
+			<a href="main.html">Home</a>
+			<a href="Temperature.html">Temperature</a>
+			<a class="active" href="DogYears.html">Dog Years</a>
+			<a href="VideoCompilation.html">Video Compilation</a>
+		</div>
+	</section>
 
-	<form id="DogForm">
-		<label for = "myAge">My age is: </label> <br>
-		<input type = "text" id = "myAge" name = "myAge" value = ""> <br><br>
-		<label for = "myName">My name is: </label> <br>
-		<input type = "text" id = "myName" name = "myName" value = ""> <br><br>
-		<button type="button" value="Submit" onclick="calculateDogYears()">Calculate</button> <br><br>
-	</form>
-	</section>
-	<section class="outputText">
-	<p id="myOutput"></p>
-	</section>
+	<main>
+		<h1>Dog Years Calculator</h1>
+		<section>
+			<p>Please input your current age:</p>
+
+			<form id="DogForm">
+				<label for = "myAge">My age is: </label> <br>
+				<input type = "text" id = "myAge" name = "myAge" value = ""> <br><br>
+				<label for = "myName">My name is: </label> <br>
+				<input type = "text" id = "myName" name = "myName" value = ""> <br><br>
+				<button type="button" value="Submit" onclick="calculateDogYears()">Calculate</button> <br><br>
+			</form>
+		</section>
+		<section class="outputText">
+			<p id="myOutput"></p>
+		</section>
 	</main>
-	<footer>No copyright at all!</footer>
+		<footer>No copyright at all!</footer>
 	
 </body>
 

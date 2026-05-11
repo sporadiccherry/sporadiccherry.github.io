@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset = "utf-8">
-	<meta name="description" content="Sporadiccherry's Super Amazing Practice Apps.">
-	<title>Temperature Conversion Tool</title>
-	<link rel="stylesheet" href="PracticeCSS.css">
-	<script src="temperature.js"></script>
-</head>
+	<head>
+		<meta charset = "utf-8">
+		<meta name="description" content="Sporadiccherry's Super Amazing Practice Apps.">
+		<link rel="stylesheet" href="PracticeCSS.css">
+		<script src="temperature.js"></script>
+		<title>Sporadiccherry | Temperature Conversion Tool</title>
+	</head>
 
-<body>
+	<body>
+		<header>
+			<nav class="topnav">
+				<a href="main.html">Home</a>
+				<a class="active" href="Temperature.html">Temperature</a>
+				<a href="DogYears.html">Dog Years</a>
+				<a href="VideoCompilation.html">Video Compilation</a>
+			</nav>
+			
+			<h1>Sporadiccherry's Super Amazing Practice Apps</h1>
+		</header>	
+			
+		<main>
+			<h2>Temperature Conversion Tool</h2>
+			<section>
+			<p>Please input the temperature that you would like to be converted:</p>
 
-	<section>
-		<div class="topnav">
-			<a href="main.html">Home</a>
-			<a class="active" href="Temperature.html">Temperature</a>
-			<a href="DogYears.html">Dog Years</a>
-			<a href="VideoCompilation.html">Video Compilation</a>
-		</div>
-	</section>
-	
-	<main>
-		<h1>Temperature Conversion Tool</h1>
-		<section>
-		<p>Please input the temperature that you would like to be converted:</p>
-
-		<form id="temperatureForm">
-			<label for = "kelvinLabel">Kelvin: </label> <br>
-			<input type = "text" id = "kelvinID" name = "kelvin" value = ""> <br><br>
-			<label for = "celsiusLabel">Celsius: </label> <br>
-			<input type = "text" id = "celsiusID" name = "celsius" value = ""> <br><br>
-			<label for = "fahrenheitLabel">Fahrenheit: </label> <br>
-			<input type = "text" id = "fahrenheitID" name = "fahrenheit" value = ""> <br><br>
-			<label for = "newtonLabel">Newton: </label> <br>
-			<input type = "text" id = "newtonID" name = "newton" value = ""> <br><br>
-			<button type="button"id="submitID" value="Submit" onclick="calculateTemp()">Convert</button> <br><br>
-		</form>
-		</section>
-		<section class="outputText">
-			<p id="myOutput"></p>
-		</section>
-	</main>
+			<fieldset>
+			<legend>Temperature Conversion</legend>
+			<form id="temperatureForm" action="">
+				<label for = "kelvinID">Kelvin: </label> <br>
+				<input type = "number" id = "kelvinID" placeholder="e.g. 300" name = "kelvin"> <br><br>
+				<label for = "celsiusID">Celsius: </label> <br>
+				<input type = "number" id = "celsiusID" placeholder="e.g. 27" name = "celsius"> <br><br>
+				<label for = "fahrenheitID">Fahrenheit: </label> <br>
+				<input type = "number" id = "fahrenheitID" placeholder="e.g. 80" name = "fahrenheit"> <br><br>
+				<label for = "newtonID">Newton: </label> <br>
+				<input type = "number" id = "newtonID" placeholder="e.g. 8" name = "newton"> <br><br>
+				<button type="button"id="submitID" value="Submit" onclick="calculateTemp()">Convert</button> <br><br>
+			</form>
+			</fieldset>
+			</section>
+			<section class="outputText">
+				<p id="myOutput"></p>
+			</section>
+		</main>
+		
 		<footer>No copyright at all!</footer>
-	
-</body>
-
-
+		
+	</body>
 </html>

@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset = "utf-8">
-	<meta name="description" content="Sporadiccherry's Super Amazing Practice Apps.">
-	<title>Dog Years Calculator</title>
-	<link rel="stylesheet" href="PracticeCSS.css">
-	<script src="DogYears.js"></script>
-</head>
+	<head>
+		<meta charset = "utf-8">
+		<meta name="description" content="Sporadiccherry's Super Amazing Practice Apps.">
+		<link rel="stylesheet" href="PracticeCSS.css">
+		<script src="DogYears.js"></script>
+		<title>Sporadiccherry | Dog Years Calculator</title>
+	</head>
 
-<body>
-	<section>
-		<div class="topnav">
-			<a href="main.html">Home</a>
-			<a href="Temperature.html">Temperature</a>
-			<a class="active" href="DogYears.html">Dog Years</a>
-			<a href="VideoCompilation.html">Video Compilation</a>
-		</div>
-	</section>
+	<body>
+		<header>
+			<nav class="topnav">
+				<a href="main.html">Home</a>
+				<a href="Temperature.html">Temperature</a>
+				<a class="active" href="DogYears.html">Dog Years</a>
+				<a href="VideoCompilation.html">Video Compilation</a>
+			</nav>
+				
+			<h1>Sporadiccherry's Super Amazing Practice Apps</h1>
+		</header>
 
-	<main>
-		<h1>Dog Years Calculator</h1>
-		<section>
-			<p>Please input your current age:</p>
-
-			<form id="DogForm">
-				<label for = "myAge">My age is: </label> <br>
-				<input type = "text" id = "myAge" name = "myAge" value = ""> <br><br>
-				<label for = "myName">My name is: </label> <br>
-				<input type = "text" id = "myName" name = "myName" value = ""> <br><br>
-				<button type="button" value="Submit" onclick="calculateDogYears()">Calculate</button> <br><br>
-			</form>
-		</section>
-		<section class="outputText">
-			<p id="myOutput"></p>
-		</section>
-	</main>
+		<main>
+			<h2>Dog Years Calculator</h2>
+			<section>
+				<p>Please input your current age:</p>
+				
+				<fieldset>
+				<legend>Dog Years Calculator</legend>
+				<form id="DogForm">
+					<label for="myName">My name is: </label> <br>
+					<input type="text" id="myName" name="myName" placeholder="e.g. Jim Gordon" required> <br><br>
+					
+					<label for="myAge">My age is: </label> <br>
+					<input type="number" id="myAge" name="myAge" placeholder="e.g. 44" required min="1" max="500"> <br><br>
+					
+					<button type="button" value="Submit" onclick="calculateDogYears()">Calculate</button>
+				</form>
+				</fieldset>
+			</section>
+			<br><br>
+			<section class="outputText">
+				<p id="myOutput"></p>
+			</section>
+		</main>
+		
 		<footer>No copyright at all!</footer>
-	
-</body>
-
-
+		
+	</body>
 </html>
